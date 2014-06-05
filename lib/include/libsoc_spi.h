@@ -150,7 +150,7 @@ int libsoc_spi_read(spi* spi, uint8_t* rx, uint32_t len);
  * \param uint32_t len - the length of the transfer in bytes
  * \return EXIT_SUCCESS or EXIT_FAILURE
  */
-int libsoc_spi_rw(spi* spi, uint8_t* tx, uint8_t* rx, uint32_t len);
+int libsoc_spi_rw(spi* spi, uint16_t* tx, uint16_t* rx, uint32_t len);
 
 #ifdef __cplusplus
 }
