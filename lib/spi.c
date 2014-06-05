@@ -325,7 +325,7 @@ libsoc_spi_read (spi * spi, uint8_t * rx, uint32_t len)
 }
 
 int
-libsoc_spi_rw (spi * spi, uint16_t * tx, uint16_t * rx, uint32_t len)
+libsoc_spi_rw (spi * spi, uint8_t * tx, uint8_t * rx, uint32_t len)
 {
   libsoc_spi_debug (__func__, spi,
 		    "performing duplex rw transfer of %d bytes", len);
